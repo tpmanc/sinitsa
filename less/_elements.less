@@ -1,0 +1,20 @@
+.bgGradient(@leftColor, @rightColor) {
+    background: @leftColor;
+    background: -moz-linear-gradient(left, @leftColor 0%, @leftColor 50%, @rightColor 50%, @rightColor 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, @leftColor), color-stop(50%, @leftColor), color-stop(50%, @rightColor), color-stop(100%, @rightColor));
+    background: -webkit-linear-gradient(left, @leftColor 0%, @leftColor 50%, @rightColor 50%, @rightColor 100%);
+    background: -o-linear-gradient(left, @leftColor 0%, @leftColor 50%, @rightColor 50%, @rightColor 100%);
+    background: -ms-linear-gradient(left, @leftColor 0%, @leftColor 50%, @rightColor 50%, @rightColor 100%);
+    background: linear-gradient(to right, @leftColor 0%, @leftColor 50%, @rightColor 50%, @rightColor 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{leftColor}', endColorstr='@{rightColor}', GradientType=1 );
+}
+
+.gold {
+    color: #fccc7f;
+}
+.underline {
+    text-decoration: underline;
+}
+.italic {
+    font-style: italic;
+}
