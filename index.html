@@ -11,11 +11,11 @@
     <div class="logo">
         <a href="#main"><img src="img/logo.png" alt=""></a>
     </div>
-    <nav class="navigation">
-        <a href="#offer">Предлагаем</a>
-        <a href="#cases">Кейсы</a>
-        <a href="#clients">Клиенты</a>
-        <a href="#contacts">Контакты</a>
+    <nav class="navigation" id="menu">
+        <a href="#offer" class="menu-offer" data-menuanchor="offer">Предлагаем</a>
+        <a href="#cases" class="menu-cases" data-menuanchor="cases">Кейсы</a>
+        <a href="#clients" class="menu-clients" data-menuanchor="clients">Клиенты</a>
+        <a href="#contacts" class="menu-contacts" data-menuanchor="contacts">Контакты</a>
     </nav>
     <div id="fullpage">
         <div class="section main" id="mainScreen">
@@ -36,8 +36,8 @@
                     <a href="#cases" class="cases-link">Смотреть кейсы</a>
                 </div>
                 <div class="middle-block">
-                    <div class="img-holder" data-parallaxify-range-x="-100" data-parallaxify-range-y="50">
-                        <img src="img/gnezdo.png" alt="">
+                    <div class="img-holder" data-parallaxify-range-x="-100" data-parallaxify-range-y="-50">
+                        <img src="img/eggs.png" alt="">
                     </div>
                 </div>
                 <div class="right-block">
@@ -56,10 +56,174 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-        <div class="section offer">Some section</div>
-        <div class="section cases">Some section</div>
-        <div class="section clients">Some section</div>
-        <div class="section contacts">Some section</div>
+        <div class="section offer">
+            <div class="content">
+                <div class="left-block">
+                    <div class="title">Наши услуги</div>
+                    <div class="services-holder">
+                        <div class="egg">
+                            
+                        </div>
+                    </div>
+                    <div class="seo">SEO продвижение</div>
+                </div>
+                <div class="right-block">
+                    <div class="title">SEO продвижение 2016г, нацеленое на заявки и звонки:</div>
+                    <div class="text">
+                        <p class="uppercase">Поиск и Оценка ваших 40 крупнейших конкурентов:</p>
+                        <ul>
+                            <li>Сколько трафика они имеют</li>
+                            <li>Какая доля с рекламы/СЕО</li>
+                            <li>Какие запросы ведут на их сайт</li>
+                            <li>С каких регионов приходит траф</li>
+                            <li>Какой контент позволяет иметь заявки и стоять в топе</li>
+                            <li>Какие ссылки стоят на их ресурсы</li>
+                        </ul>
+                        <p>
+                            Поиск и сбор запросов по конкурентам, базам и др. Сервисам, 
+                            всего 24 (МОАБ, Спайвордс, мегаиндекс, seolab, seopult, Пастухова и еще)
+                        </p>
+                        <div class="best-cases">
+                            <div class="sub-title">ЛУЧШИЕ КЕЙСЫ</div>
+                            <div class="btns-holder">
+                                <div class="case-btn">Pro-medic.ru</div>
+                                <div class="case-btn">Beurer.tv</div>
+                                <div class="case-btn">Gazon-trava.ru</div>
+                                <div class="case-btn">vipecology.ru</div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">Читать подробнее</div>
+            </div>
+        </div>
+        <div class="section cases">
+            <div id="filter">
+                <div class="top-filter">
+                    <div class="center-holder">
+                        <div class="filter-btn active">Веб дизайн</div>
+                        <div class="filter-btn">SEO</div>
+                        <div class="filter-btn">Контекстная реклама</div>
+                        <div class="filter-btn">Контент маркетинг</div>
+                    </div>
+                </div>
+                <div class="bottom-filter">
+                    <div class="center-holder">
+                        <div data-filter="ecommerce" class="filter-btn">Интернет-магазин</div>
+                        <div data-filter="landing" class="filter-btn">Landing Page</div>
+                        <div data-filter="corporate" class="filter-btn">Корпоративный сайт</div>
+                        <div data-filter="bcard" class="filter-btn">Сайт-визитка</div>
+                        <div data-filter="portal" class="filter-btn">Портал</div>
+                        <div data-filter="marketplace" class="filter-btn">Маркетплейс</div>
+                    </div>
+                </div>
+            </div>
+            <div id="worksHolder">
+                <div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div>
+                <div class="elem" data-category="landing" data-img="img/temp/petrol_preview.png"></div>
+                <div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div>
+                <div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div>
+                <div class="elem" data-category="landing" data-img="img/temp/petrol_preview.png"></div>
+                <div class="elem" data-category="ecommerce" data-img="img/temp/petrol_preview.png"></div>
+                <div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div><div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div><div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div><div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div><div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div><div
+                    class="elem"
+                    data-category="ecommerce"
+                    data-title="ЭСТЕТ КЛИНИК"
+                    data-text="Корпоративный сайт пластической хирургии"
+                    data-img="img/temp/petrol_preview.png">
+                </div>
+            </div>
+            <div class="works" id="works">
+                <div class="slider-slide"></div>
+            </div>
+        </div>
+        <div class="section clients" id="clientsScreen">
+
+        </div>
+        <div class="section contacts">
+            <!-- <div class="triangle-1" data-parallaxify-range-x="-6" data-parallaxify-range-y="-4"></div>
+            <div class="triangle-2" data-parallaxify-range-x="-7" data-parallaxify-range-y="-3"></div>
+            <div class="triangle-3" data-parallaxify-range-x="-9" data-parallaxify-range-y="-5"></div>
+            <div class="triangle-4" data-parallaxify-range-x="-3" data-parallaxify-range-y="-2"></div> -->
+
+            <div class="triangle-1"></div>
+            <div class="triangle-2"></div>
+            <div class="triangle-3"></div>
+            <div class="triangle-4"></div>
+            <div class="block-holder">
+                <div class="block-title">
+                    <span class="first-word">Мы</span> <span class="second-word">создаем</span> цифровые истории и гордимся нашими проектами.<br>
+                    А наши клиенты с их помощью успешно добиваются своих бизнес-целей.
+                </div>
+
+                <div class="text-holder">
+                    <div class="img">
+                        <img src="img/bird.png" alt="">
+                    </div>
+                    <div class="text">
+                        Что делает MST настоящей dream team? Общие ценности, позволяющие 
+                        полусотне человек действовать как единое целое. Мы заботимся о 
+                        клиентах, гордимся своими проектами, мыслим нестандартно и позитивно, 
+                        постоянно растем и развиваемся, круто работаем и круто отдыхаем. 
+                        Мы сами придумали для себя эти нехитрые правила, которых стараемся 
+                        придерживаться в работе и личном общении.
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bottom-text">
+                    Напишите или позвоните нам, и мы начнем создавать вашу новую историю вместе.
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -69,7 +233,7 @@
             <a href="#" class="social-btn twitter-btn"><i class="fa fa-twitter"></i></a>
             <div class="clearfix"></div>
         </div>
-        <div class="contect-holder">
+        <div class="contact-holder">
             <div class="left">
                 <div class="phone">8 (499) 110-09-82</div>
                 <div class="email">info@si-nitsa.ru</div>

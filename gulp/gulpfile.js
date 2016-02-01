@@ -23,6 +23,8 @@ gulp.task('js', function() {
     gulp.src([
             '../bower_components/jquery/dist/jquery.min.js',
             '../bower_components/fullpage.js/dist/jquery.fullpage.min.js',
+            '../bower_components/masonry/dist/masonry.pkgd.min.js',
+            '../bower_components/slick-carousel/slick/slick.min.js',
             // '../js/parallax.min.js',
             '../js/main.js',
         ])

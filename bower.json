@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "fullpage.js": "^2.7.7"
+    "fullpage.js": "^2.7.7",
+    "masonry": "^4.0.0",
+    "slick-carousel": "^1.5.9"
   }
 }
