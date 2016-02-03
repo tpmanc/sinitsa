@@ -23,9 +23,9 @@ $(function() {
     $('#mainScreen').parallaxify({
         positionProperty: 'transform'
     });
-    // $('#clientsScreen').parallaxify({
-    //     positionProperty: 'transform'
-    // });
+    $('#contactsScreen').parallaxify({
+        positionProperty: 'transform'
+    });
 
     $filter = $('#filter');
     $bottomFilter = $filter.find('.bottom-filter');
