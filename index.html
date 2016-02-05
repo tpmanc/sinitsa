@@ -9,7 +9,10 @@
 </head>
 <body>
     <div class="logo">
-        <a href="#main"><img src="img/logo.png" alt=""></a>
+        <a href="#main">
+            <img src="img/logo.png" alt="">
+
+        </a>
     </div>
     <nav class="navigation" id="menu">
         <a href="#offer" class="menu-offer" data-menuanchor="offer">Предлагаем</a>
@@ -58,39 +61,44 @@
         </div>
         <div class="section offer">
             <div class="content">
-                <div class="left-block">
-                    <div class="title">Наши услуги</div>
-                    <div class="services-holder">
-                        <div class="egg">
-                            
+                <div class="left-block vertical-center">
+                    <div class="vertical-center-cell">
+                        <div class="title">Наши услуги</div>
+                        <div class="services-holder">
+                            <div class="egg"><div class="icon loop-icon"></div></div>
+                            <div class="egg"><div class="icon cursor-icon"></div></div>
+                            <div class="egg"><div class="icon tablet-icon"></div></div>
+                            <div class="egg"><div class="icon page-icon"></div></div>
                         </div>
+                        <div class="seo">SEO продвижение</div>
                     </div>
-                    <div class="seo">SEO продвижение</div>
                 </div>
-                <div class="right-block">
-                    <div class="title">SEO продвижение 2016г, нацеленое на заявки и звонки:</div>
-                    <div class="text">
-                        <p class="uppercase">Поиск и Оценка ваших 40 крупнейших конкурентов:</p>
-                        <ul>
-                            <li>Сколько трафика они имеют</li>
-                            <li>Какая доля с рекламы/СЕО</li>
-                            <li>Какие запросы ведут на их сайт</li>
-                            <li>С каких регионов приходит траф</li>
-                            <li>Какой контент позволяет иметь заявки и стоять в топе</li>
-                            <li>Какие ссылки стоят на их ресурсы</li>
-                        </ul>
-                        <p>
-                            Поиск и сбор запросов по конкурентам, базам и др. Сервисам, 
-                            всего 24 (МОАБ, Спайвордс, мегаиндекс, seolab, seopult, Пастухова и еще)
-                        </p>
-                        <div class="best-cases">
-                            <div class="sub-title">ЛУЧШИЕ КЕЙСЫ</div>
-                            <div class="btns-holder">
-                                <div class="case-btn">Pro-medic.ru</div>
-                                <div class="case-btn">Beurer.tv</div>
-                                <div class="case-btn">Gazon-trava.ru</div>
-                                <div class="case-btn">vipecology.ru</div>
-                                <div class="clearfix"></div>
+                <div class="right-block vertical-center">
+                    <div class="vertical-center-cell">
+                        <div class="title">SEO продвижение 2016г, нацеленое на заявки и звонки:</div>
+                        <div class="text">
+                            <p class="uppercase">Поиск и Оценка ваших 40 крупнейших конкурентов:</p>
+                            <ul>
+                                <li>Сколько трафика они имеют</li>
+                                <li>Какая доля с рекламы/СЕО</li>
+                                <li>Какие запросы ведут на их сайт</li>
+                                <li>С каких регионов приходит траф</li>
+                                <li>Какой контент позволяет иметь заявки и стоять в топе</li>
+                                <li>Какие ссылки стоят на их ресурсы</li>
+                            </ul>
+                            <p>
+                                Поиск и сбор запросов по конкурентам, базам и др. Сервисам, 
+                                всего 24 (МОАБ, Спайвордс, мегаиндекс, seolab, seopult, Пастухова и еще)
+                            </p>
+                            <div class="best-cases">
+                                <div class="sub-title">ЛУЧШИЕ КЕЙСЫ</div>
+                                <div class="btns-holder">
+                                    <div class="case-btn">Pro-medic.ru</div>
+                                    <div class="case-btn">Beurer.tv</div>
+                                    <div class="case-btn">Gazon-trava.ru</div>
+                                    <div class="case-btn">vipecology.ru</div>
+                                    <div class="clearfix"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -274,6 +282,36 @@
         </div>
     </div>
 
+    <div class="modals-holder">
+        <div class="box-modal" id="callbackModal">
+            <div class="box-modal_close arcticmodal-close">закрыть</div>
+            <div class="title">Оставить заявку</div>
+            <div class="text">заполните простую форму или позвоните по номеру +7 (499) 110-09-82</div>
+            <form action="#" class="callback-form">
+                <div class="line">
+                    <input type="text" placeholder="имя/организация">
+                </div>
+                <div class="line">
+                    <div class="left-block">
+                        <input type="text" placeholder="email">
+                    </div>
+                    <div class="right-block">
+                        <input type="text" placeholder="телефон">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="line">
+                    <input type="text" placeholder="интересующая услуга">
+                </div>
+            </form>
+            <div class="btn">отправить</div>
+            <div class="bottom-text">
+                мы постараемся ответить вам в течении 2 рабочих часов.
+                если ответ необходим быстрее, позвоните по номеру +7 (499) 110-09-82
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="social-btns">
             <a href="#" class="social-btn vk-btn"><i class="fa fa-vk"></i></a>
@@ -291,7 +329,7 @@
                 <div class="address-bottom">улица Батьково, стр 1</div>
             </div>
         </div>
-        <div class="callback-btn">Оставить заявку</div>
+        <div class="callback-btn" id="callbackBtn">Оставить заявку</div>
     </footer>
 </body>
 </html>

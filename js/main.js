@@ -20,6 +20,10 @@ $(function() {
         }
     });
 
+    $('#callbackBtn').on('click', function(){
+        $('#callbackModal').arcticmodal();
+    });
+
     $('#mainScreen').parallaxify({
         positionProperty: 'transform'
     });

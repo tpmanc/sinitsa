@@ -25,7 +25,7 @@ gulp.task('js', function() {
             '../bower_components/fullpage.js/dist/jquery.fullpage.min.js',
             '../bower_components/masonry/dist/masonry.pkgd.min.js',
             '../bower_components/slick-carousel/slick/slick.min.js',
-            // '../js/parallax.min.js',
+            '../js/jquery.arcticmodal-0.3.min.js',
             '../js/main.js',
         ])
     .pipe(concat('main.min.js'))
