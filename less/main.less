@@ -15,6 +15,19 @@ html, body {
     top: 50px;
     left: 50px;
     z-index: 5;
+    
+    .logo-link {
+        display: block;
+        height: 57px;
+        width: 236px;
+        
+        svg {
+            fill: #fff;
+            max-width: 100%;
+            height: 57px;
+            transition: fill 1.5s ease 0s;
+        }
+    }
 }
     
 .navigation {
@@ -130,6 +143,13 @@ html, body {
 }
 
 &.dark {
+    .logo {
+        .logo-link {
+            svg {
+                fill: #000;
+            }
+        }
+    }
     .navigation {
         a {
             color: #000;
@@ -150,6 +170,13 @@ html, body {
     }
 }
 &.split {
+    .logo {
+        .logo-link {
+            svg {
+                fill: #000;
+            }
+        }
+    }
     .navigation {
         a:nth-of-type(3) {
             color: #000;
@@ -278,10 +305,22 @@ html, body {
                     box-sizing: border-box;
                     
                     .title {
+                        position: relative;
                         color: #FFF;
                         font-size: 2.143rem;
                         font-weight: 500;
                         font-style: italic;
+                        
+                        .arrow {
+                            position: absolute;
+                            right: 100%;
+                            margin-right: 15px;
+                            top: 10px;
+                            display: inline-block;
+                            width: 80px;
+                            height: 34px;
+                            background: @arrowSprite -20px -30px;
+                        }
                     }
                     .text {
                         margin-top: 50px;
