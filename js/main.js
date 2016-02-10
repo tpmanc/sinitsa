@@ -92,6 +92,28 @@ $(function() {
 
     $filter.find('.bottom-filter .filter-btn').eq(0).click();
 
+    $('#callbackBtnSend').on('click', function(){
+        var form = $('#callbackModal').find('.callback-form');
+        var name = form.find('.name');
+        var phone = form.find('.phone');
+        var email = form.find('.email');
+        var service = form.find('.service');
+
+        phone.removeClass('error');
+        if (phone.val().trim().length < 4) {
+            phone.addClass('error');
+        } else {
+            $.ajax({
+                type: "POST",
+                url: "/sendmail.php",
+                data: "name=" + name.val() + "&phone=" + phone.val() + "&email=" + email.val() + "&service="+service.val(),
+                success: function(msg){
+                    alert( "Data Saved: " + msg );
+                }
+             });
+        }
+    });
+
     // var $gnezdo = $('.section.main .fp-tableCell');
     // var $eggs = $('#eggs');
     // var movementStrength = 0.8;
