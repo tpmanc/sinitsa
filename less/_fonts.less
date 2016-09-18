@@ -1,67 +1,76 @@
-@basePath: '../fonts';
+@fontFolder: '../fonts';
 
 @font-face {
-    font-family: 'GothamPro';
-    src: url('@{basePath}/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
-         url('@{basePath}/GothamPro-Black.otf')  format('opentype'),
-         url('@{basePath}/GothamPro-Black.woff') format('woff'),
-         url('@{basePath}/GothamPro-Black.ttf')  format('truetype'),
-         url('@{basePath}/GothamPro-Black.svg#GothamPro-Black') format('svg');
-    font-weight: 900;
+    font-family: 'fira';
+    src: url('firasans-regular-webfont.woff2') format('woff2'),
+         url('firasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'GothamPro';
-    src: url('@{basePath}/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-         url('@{basePath}/GothamPro-Bold.otf')  format('opentype'),
-         url('@{basePath}/GothamPro-Bold.woff') format('woff'),
-         url('@{basePath}/GothamPro-Bold.ttf')  format('truetype'),
-         url('@{basePath}/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+    font-family: 'fira';
+    src: url(~'@{fontFolder}/firasans-bold-webfont.woff2') format('woff2'),
+         url(~'@{fontFolder}/firasans-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'GothamPro';
-    src: url('@{basePath}/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
-         url('@{basePath}/GothamPro-Light.otf')  format('opentype'),
-         url('@{basePath}/GothamPro-Light.woff') format('woff'),
-         url('@{basePath}/GothamPro-Light.ttf')  format('truetype'),
-         url('@{basePath}/GothamPro-Light.svg#GothamPro-Light') format('svg');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GothamPro';
-    src: url('@{basePath}/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-         url('@{basePath}/GothamPro-Medium.otf')  format('opentype'),
-         url('@{basePath}/GothamPro-Medium.woff') format('woff'),
-         url('@{basePath}/GothamPro-Medium.ttf')  format('truetype'),
-         url('@{basePath}/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GothamPro';
-    src: url('@{basePath}/GothamPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
-         url('@{basePath}/GothamPro-MediumItalic.otf')  format('opentype'),
-         url('@{basePath}/GothamPro-MediumItalic.woff') format('woff'),
-         url('@{basePath}/GothamPro-MediumItalic.ttf')  format('truetype'),
-         url('@{basePath}/GothamPro-MediumItalic.svg#GothamPro-MediumItalic') format('svg');
-    font-weight: 500;
+    font-family: 'fira';
+    src: url(~'@{fontFolder}/firasans-bookitalic-webfont.woff2') format('woff2'),
+         url(~'@{fontFolder}/firasans-bookitalic-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'GothamPro';
-    src: url('@{basePath}/GothamPro.eot?#iefix') format('embedded-opentype'),
-         url('@{basePath}/GothamPro.otf')  format('opentype'),
-         url('@{basePath}/GothamPro.woff') format('woff'),
-         url('@{basePath}/GothamPro.ttf')  format('truetype'),
-         url('@{basePath}/GothamPro.svg#GothamPro') format('svg');
+    font-family: 'fira';
+    src: url(~'@{fontFolder}/firasans-bolditalic-webfont.woff2') format('woff2'),
+         url(~'@{fontFolder}/firasans-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'fira';
+    src: url(~'@{fontFolder}/firasans-book-webfont.woff2') format('woff2'),
+         url(~'@{fontFolder}/firasans-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'fira';
+    src: url(~'@{fontFolder}/firasans-light-webfont.woff2') format('woff2'),
+         url(~'@{fontFolder}/firasans-light-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+// @font-face {
+//     font-family: 'fira';
+//     src: url('firasans-medium-webfont.woff2') format('woff2'),
+//          url('firasans-medium-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'fira';
+//     src: url('firasans-mediumitalic-webfont.woff2') format('woff2'),
+//          url('firasans-mediumitalic-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+
+
+// @font-face {
+//     font-family: 'fira';
+//     src: url('firasans-semibold-webfont.woff2') format('woff2'),
+//          url('firasans-semibold-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
