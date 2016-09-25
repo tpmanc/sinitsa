@@ -736,6 +736,7 @@ body {
 @import "contacts.less";
 @import "company.less";
 @import "portfolio.less";
+@import "services.less";
 
 .content-width {
 	width: 1170px;
@@ -930,5 +931,86 @@ body {
 		font-size: 2.143rem;
 		font-weight: normal;
 		line-height: 3.5rem;
+	}
+}
+
+.same-project {
+	padding: 48px 0 40px;
+	
+	&.red {
+		background: #B80D2C;
+		
+		.btn {
+			background: #840018;
+		}
+	}
+	&.purple {
+		background: #4c1d36;
+		
+		.btn {
+			background: #34071f;
+		}
+	}
+	&.mini {
+		.content-width {
+			.btn {
+				padding: 45px 89px 43px 87px;
+			}
+		}
+	}
+	.content-width {
+		position: relative;
+		
+		.title {
+			font-weight: bold;
+			font-size: 2.143rem;
+			font-style: normal;
+			color: #FFF;
+		}
+		.description {
+			font-size: 1.143rem;
+			color: #FFF;
+			margin-top: -4px;
+		}
+		.btn {
+			display: block;
+			font-size: 2.143rem;
+			color: #FFF;
+			position: absolute;
+			right: 0;
+			top: -48px;
+			padding: 60px 89px 49px 87px;
+			cursor: pointer;
+		}
+	}
+}
+
+.article {
+	width: 1170px;
+	margin: 0 auto;
+	padding-top: 81px;
+	padding-bottom: 80px;
+	
+			.title {
+		font-size: 1.285rem;
+		font-weight: bold;
+		margin: 35px 0;
+	}
+	p {
+		padding: 17px 0;
+	}
+	ul {
+		margin-bottom: 35px;
+		
+		li {
+			&:before {
+				content: "▶";
+				display: inline-block;
+				color: #FF8B4D;
+				margin-right: 16px;
+				margin-top: 13px;
+				margin-bottom: 13px;
+			}
+		}
 	}
 }
