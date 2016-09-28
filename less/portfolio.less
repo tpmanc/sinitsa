@@ -25,6 +25,7 @@
 		background: #000;
 		box-sizing: border-box;
 		background-position: center;
+		background-size: cover;
 		
 		&:hover {
 			.hover {
@@ -34,8 +35,8 @@
 		&.portfolio__another-works {
 			width: 100%;
 			background: #008182;
-			padding-left: 150px;
-			padding-right: 130px;
+			padding-left: 14%;
+			padding-right: 13%;
 			
 			&.orange {
 				background: #ff8b4d;
@@ -64,11 +65,11 @@
 			}
 		}
 		&.portfolio__work--wide {
-			width: 100%;
-			height: 764px;
+			width: 50%;
+			height: 382px;
 			
 			.hover {
-				height: 764px;
+				height: 382px;
 			}
 		}
 		.vert-holder {
@@ -114,10 +115,10 @@
 @media (min-width: @screenMediumMin) and (max-width: @screenMediumMax) {
 	.portfolio-holder {
 		.portfolio__work {
-			width: 33.33333%;
+			width: 33.3333%;
 			
-			&.portfolio__another-works {
-				width: 66.6666%;
+			&.portfolio__work--wide {
+				width: 33.3333%;
 			}
 		}
 	}
@@ -127,8 +128,13 @@
 		.portfolio__work {
 			width: 25%;
 			
-			&.portfolio__another-works {
+			&.portfolio__work--wide {
+				height: 764px;
 				width: 50%;
+				
+				.hover {
+					height: 764px;
+				}
 			}
 		}
 	}
@@ -143,6 +149,11 @@
 			}
 			&.portfolio__work--wide {
 				width: 40%;
+				height: 764px;
+				
+				.hover {
+					height: 764px;
+				}
 			}
 		}
 	}
