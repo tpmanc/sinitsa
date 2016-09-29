@@ -1,14 +1,14 @@
 .contacts {
 	.contact-columns {
-		width: 1170px;
+		width: 90%;
 		margin: 0 auto;
 		margin-top: 56px;
 		margin-bottom: 81px;
 	}
 	.moscow-column {
 		display: inline-block;
+		width: 100%;
 		vertical-align: top;
-		width: 500px;
 		text-align: center;
 		color: #383838;
 
@@ -40,9 +40,10 @@
 	.elektrostal-column {
 		display: inline-block;
 		vertical-align: top;
-		width: 500px;
+		width: 100%;
 		text-align: center;
 		color: #383838;
+		margin-top: 37px;
 
 		.title {
 			font-size: 1.714rem;
@@ -67,6 +68,20 @@
 			text-decoration: underline;
 			font-weight: bold;
 			font-style: italic;
+		}
+	}
+}
+@media (min-width: @screenMediumMin) {
+	.contacts {
+		.moscow-column {
+			width: 500px;
+		}
+		.elektrostal-column {
+			width: 500px;
+			margin-top: 0;
+		}
+		.contact-columns {
+			width: 1170px;
 		}
 	}
 }

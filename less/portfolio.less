@@ -1,25 +1,8 @@
 .portfolio-holder {
 	width: 100%;
 	
-	&.ltr {
-		.portfolio__work {
-			float: left;
-			
-			&.portfolio__work--wide {
-				float: right;
-			}
-		}
-	}
-	&.rtl {
-		.portfolio__work {
-			float: right;
-			
-			&.portfolio__work--wide {
-				float: left;
-			}
-		}
-	}
 	.portfolio__work {
+		float: left;
 		width: 50%;
 		height: 382px;
 		background: #000;
@@ -65,9 +48,13 @@
 			}
 		}
 		&.portfolio__work--wide {
+			float: right;
 			width: 50%;
 			height: 382px;
 			
+			&.fl {
+				float: left;
+			}
 			.hover {
 				height: 382px;
 			}
@@ -112,6 +99,17 @@
 		}
 	}
 }
+@media (max-width: @screenMiniMax) {
+	.portfolio-holder {
+		.portfolio__work {
+			width: 100%;
+			
+			&.portfolio__work--wide {
+				width: 100%;
+			}
+		}
+	}
+}
 @media (min-width: @screenMediumMin) and (max-width: @screenMediumMax) {
 	.portfolio-holder {
 		.portfolio__work {
@@ -129,12 +127,7 @@
 			width: 25%;
 			
 			&.portfolio__work--wide {
-				height: 764px;
-				width: 50%;
-				
-				.hover {
-					height: 764px;
-				}
+				width: 25%;
 			}
 		}
 	}
@@ -143,7 +136,11 @@
 	.portfolio-holder {
 		.portfolio__work {
 			width: 20%;
+			float: right;
 			
+			&.fr {
+				float: right;
+			}
 			&.portfolio__another-works {
 				width: 40%;
 			}
@@ -168,8 +165,8 @@
 	box-sizing: border-box;
 	
 	.title {
+		width: 90%;
 		height: 125px;
-		width: 1170px;
 		background: url(~'@{imgPath}/bork/work-intro.png');
 		font-size: 2.571rem;
 		font-weight: bold;
@@ -178,6 +175,13 @@
 		margin: 0 auto;
 		padding-top: 33px;
 		box-sizing: border-box;
+	}
+}
+@media (min-width: @screenBigMin) {
+	.portfolio-intro {
+		.title {
+			width: 1170px;
+		}
 	}
 }
 .portfolio {
